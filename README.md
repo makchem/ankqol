@@ -1,2 +1,40 @@
 # ankqol
-Quality of life features add-on for Anki flashcrads app 
+
+Quality of life add-on for [Anki](https://apps.ankiweb.net/). Targets Anki 2.1.50+.
+
+## Features
+
+### Archive
+
+Adds an **Archive** button to the top toolbar alongside Decks, Add, Browse, Stats, and Sync.
+
+Archived decks are hidden from the main Decks view and only visible when the Archive tab is active. This is useful for decks you want to keep but aren't actively studying.
+
+- Right-click any deck → **Archive Deck** to move it to the archive
+- Right-click an archived deck → **Unarchive Deck** to restore it
+- Archiving a parent deck automatically archives all its child decks
+
+Archived deck IDs are stored in the add-on's own config and do not modify Anki's deck data.
+
+## Installation
+
+Symlink or copy this repository folder into your Anki add-ons directory:
+
+```
+# Windows
+mklink /J "%APPDATA%\Anki2\addons21\ankqol" "path\to\ankqol"
+
+# macOS / Linux
+ln -s /path/to/ankqol ~/Library/Application\ Support/Anki2/addons21/ankqol
+```
+
+Then restart Anki.
+
+## Development
+
+```bash
+python -m venv .venv
+.venv/Scripts/pip install -r requirements-dev.txt  # Windows
+# or
+.venv/bin/pip install -r requirements-dev.txt       # macOS / Linux
+```
