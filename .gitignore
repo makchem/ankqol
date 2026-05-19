@@ -1,5 +1,6 @@
 .venv/
 .claude/
+dist/
 meta.json
 __pycache__/
 *.pyc
