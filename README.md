@@ -16,6 +16,18 @@ Archived decks are hidden from the main Decks view and only visible when the Arc
 
 Archived deck IDs are stored in the add-on's own config and do not modify Anki's deck data.
 
+### Featured Decks
+
+Pin any number of decks to the top of the Decks list with a star marker.
+
+- Click the **☆** icon next to any deck name to feature it — it turns gold **★** and the deck moves to the top
+- Click the **★** again to unfeature it
+- Or right-click any deck → **☆ Feature Deck** / **★ Unfeature Deck**
+- Featuring a parent deck also features all its child decks
+- Multiple decks can be featured simultaneously
+
+Featured deck IDs are stored in the add-on's own config and do not modify Anki's deck data.
+
 ## Installation
 
 Symlink or copy this repository folder into your Anki add-ons directory:
