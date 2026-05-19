@@ -2,6 +2,7 @@ from aqt import gui_hooks
 from . import archive_feature
 
 gui_hooks.top_toolbar_did_init_links.append(archive_feature.on_toolbar_init_links)
+gui_hooks.deck_browser_will_render_content.append(archive_feature.on_will_render_content)
 gui_hooks.deck_browser_did_render.append(archive_feature.on_did_render)
 gui_hooks.deck_browser_will_show_options_menu.append(archive_feature.on_options_menu)
 gui_hooks.webview_did_receive_js_message.append(archive_feature.on_js_message)
