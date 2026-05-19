@@ -28,6 +28,17 @@ Pin any number of decks to the top of the Decks list with a star marker.
 
 Featured deck IDs are stored in the add-on's own config and do not modify Anki's deck data.
 
+### Deck Rearrangement
+
+Manually set the display order of decks in the Decks list.
+
+- Click **☰ Rearrange decks** at the bottom of the Decks tab to open the rearrangement dialog
+- The dialog shows two independent lists: **★ Featured** decks and regular **Decks**
+- Regular decks list features a **Default** entry, which determines the position, at which the newly added decks will be positioned
+- Drag items within each list to set the order, then click **OK** to apply
+- Child decks always follow their parent — only top-level decks are listed
+- The saved order persists across restarts
+
 ## Installation
 
 Symlink or copy this repository folder into your Anki add-ons directory:
